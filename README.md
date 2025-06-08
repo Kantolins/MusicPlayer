@@ -84,11 +84,12 @@ Remarque : l'utilisation de connexion internet est requise
 
 ---
 
-## 🤝 Auteur
+## 🤝 Auteurs
 
 **RAKOTONAVALONA Henintsoa Ny Aina**  
 Étudiant en L3 Informatique à l’ESMIA  
-Membre de [Start’app Mada](https://startappmada.netlify.app)
+**RAKOTONAVALONA Kanto Liantsoa**
+Étudiant en L3 Informatique à l’ESMIA
 
 ---
 
