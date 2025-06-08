@@ -86,10 +86,9 @@ Remarque : l'utilisation de connexion internet est requise
 
 ## 🤝 Auteurs
 
-**RAKOTONAVALONA Henintsoa Ny Aina**  
-Étudiant en L3 Informatique à l’ESMIA  
+**RAKOTONAVALONA Henintsoa Ny Aina**
 **RAKOTONAVALONA Kanto Liantsoa**
-Étudiant en L3 Informatique à l’ESMIA
+Étudiants en L3 Informatique à l’ESMIA  
 
 ---
 
