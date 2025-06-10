@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from historique import get_historique, add_historique
+from historiques import get_historique, add_historique
 
 class TestHistorique(unittest.TestCase):
     @patch('mysql.connector.connect')

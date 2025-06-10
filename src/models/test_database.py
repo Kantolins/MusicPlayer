@@ -1,5 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
+import mysql.connector
 from database import get_db
 
 class TestDatabaseConnection(unittest.TestCase):
