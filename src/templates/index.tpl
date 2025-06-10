@@ -1,4 +1,4 @@
-
+%# Page d'accueil de l'application Music Player
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,6 +27,7 @@
     >
       <div class="flex justify-between">
         <h1 class="font-serif text-3xl font-medium">Music Player</h1>
+        %# Lien vers la page de connexion/lecteur
         <a
           href="\chanson"
           class="self-start px-3 py-2 leading-none text-gray-200 border border-gray-800 rounded-lg focus:outline-none focus:shadow-outline bg-gradient-to-b hover:from-indigo-500 from-gray-900 to-black"
@@ -37,12 +38,14 @@
 
       <div class="h-32 md:h-40"></div>
 
+      %# Slogan principal de l'application
       <p
         class="font-sans text-4xl font-bold text-gray-200 max-w-5xl lg:text-7xl lg:pr-24 md:text-6xl"
       >
        Ecoutez et cherchez vos musique préférés sur notre application
       </p>
       <div class="h-10"></div>
+      %# Description de la plateforme
       <p class="max-w-2xl font-serif text-xl text-gray-400 md:text-2xl">
         Imaginez une plateforme qui combine la reconnaissance et la lecture de vos musique 
       </p>

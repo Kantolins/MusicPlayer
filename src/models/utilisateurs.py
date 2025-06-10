@@ -1,7 +1,7 @@
 from .database import get_db
 
 
-#verification de l'email 
+# Vérifie si un utilisateur existe avec l'email donné
 def get_user_by_email(email):
     db = get_db()
     cursor = db.cursor(dictionary=True)
@@ -10,7 +10,7 @@ def get_user_by_email(email):
     db.close()
     return user
 
-#verification auth
+# Vérifie les identifiants de connexion (nom d'utilisateur et mot de passe hashé)
 def get_user_by_credentials(nom, mdp):
     db = get_db()
     cursor = db.cursor(dictionary=True)
@@ -19,7 +19,7 @@ def get_user_by_credentials(nom, mdp):
     db.close()
     return user
 
-#création d'un noveau utilisateur
+# Crée un nouvel utilisateur dans la base de données
 def create_user(nom, email, mdp):
     db = get_db()
     cursor = db.cursor()

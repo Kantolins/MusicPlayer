@@ -1,7 +1,8 @@
 import mysql.connector
 
-#connection à la base de donnée
+# Fonction pour établir une connexion à la base de données MySQL
 def get_db():
+    # Retourne une connexion à la base 'musique' avec les paramètres spécifiés
     return mysql.connector.connect(
         host="localhost",
         user="root",

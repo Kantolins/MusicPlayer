@@ -1,6 +1,6 @@
 from .database import get_db
 
-#affiche tous les historiques à partir de son utilisateurs
+# Récupère tous les historiques d'un utilisateur donné (par son id)
 def get_historiques_by_user(id_util):
     db = get_db()
     cursor = db.cursor(dictionary=True)
@@ -13,7 +13,7 @@ def get_historiques_by_user(id_util):
     db.close()
     return rows
 
-#supprime l'historique à partir de son id 
+# Supprime un historique spécifique à partir de son id et de l'id utilisateur
 def delete_historique_by_id(id_histo, id_util):
     db = get_db()
     cursor = db.cursor()
@@ -21,7 +21,7 @@ def delete_historique_by_id(id_histo, id_util):
     db.commit()
     db.close()
 
-#inserer une nouvelle historique
+# Insère une nouvelle entrée dans l'historique de l'utilisateur
 def insert_historique(id_util, date, heure, titre, artiste):
     db = get_db()
     cursor = db.cursor()

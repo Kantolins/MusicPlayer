@@ -1,3 +1,4 @@
+%# Page du lecteur musical Jamendo
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/public/image/ChatGPT Image 9 mai 2025, 10_26_52.png" type="image/x-icon">
     <style>
+        /* Spinner de chargement pour la recherche */
         .spinner {
             border: 4px solid rgba(255, 255, 255, 0.1);
             border-top: 4px solid #10B981;
@@ -92,6 +94,7 @@
         <div class="circle"></div>
     </div>
 
+    <!-- Menu burger pour la navigation (reconnaissance, historique, logout) -->
     <header class="w-full max-w-3xl mb-4 flex justify-between items-center animate-fade-in-down">
         <div class="relative">
             <button id="menuBtn" class="text-white text-2xl focus:outline-none">
@@ -113,29 +116,36 @@
     </header>
 
     <div class="w-full max-w-3xl animate-fade-in">
+        <!-- Titre principal -->
         <h1 class="text-2xl sm:text-3xl font-bold text-green-500 mb-6 text-center">
             <i class="fas fa-music"></i> Recherche Musicale
         </h1>
 
+        <!-- Champ de recherche Jamendo -->
         <input type="text" id="searchInput" placeholder="Rechercher une musique ou un artiste..."
             class="w-full p-2 sm:p-3 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300" />
 
+        <!-- Loader de recherche -->
         <div id="loader" class="flex justify-center mt-6 hidden">
             <div class="spinner"></div>
         </div>
 
+        <!-- Résultats de recherche affichés ici -->
         <div id="results" class="mt-6 space-y-4"></div>
     </div>
 
+    <!-- Lecteur audio fixe en bas de page avec contrôle du mode de lecture -->
     <div id="playerContainer"
         class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-4 py-3 hidden z-50 shadow-lg animate-fade-in-up">
         <div class="max-w-3xl mx-auto flex flex-wrap sm:flex-nowrap items-center justify-between gap-4">
             <div class="flex-1 min-w-[200px]">
+                <!-- Affichage du morceau en cours -->
                 <p id="currentTrack" class="text-xs sm:text-sm text-green-400 truncate">
                     <i class="fas fa-play"></i> Lecture en cours :
                 </p>
                 <audio id="audioPlayer" controls class="w-full mt-1 bg-gray-700 rounded-lg shadow-inner"></audio>
             </div>
+            <!-- Boutons de mode de lecture : normal, répéter, aléatoire -->
             <div class="flex gap-2">
                 <button id="normalBtn"
                     class="text-xs sm:text-sm bg-gray-700 hover:bg-green-600 px-2 sm:px-3 py-1 rounded shadow">
@@ -153,6 +163,7 @@
         </div>
     </div>
 
+    <!-- Script JS pour la logique de recherche et de lecture Jamendo -->
     <script src="/public/js/api2.js"></script>
 </body>
 
