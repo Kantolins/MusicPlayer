@@ -1,4 +1,4 @@
-const apiKey = 'e18239cf61ae28112e6796fc0b8b993b'; // Remplace par ta vraie clé AudD
+const apiKey = '8107943458cdc09ce78652f07741ba5d'; // Remplace par ta vraie clé AudD
 
 async function recognizeMusic(audioData) {
   const formData = new FormData();
