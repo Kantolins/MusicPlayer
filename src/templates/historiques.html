@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Historique des musiques</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --main-color: #1DB954;
+    }
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+  <div class="bg-[#1e1e1e] max-w-3xl w-full rounded-2xl shadow-2xl p-6 animate-fadeIn">
+    <h1 class="text-3xl font-bold text-center text-[#1DB954] mb-6"><i class="fas fa-clock"></i> Historique des reconnaissances</h1>
+    
+    <div class="space-y-4">
+      <!-- Éléments de l'historique -->
+      <div class="bg-[#2a2a2a] p-4 rounded-lg shadow flex items-center justify-between hover:scale-[1.01] transition">
+        <div>
+          <p class="text-lg font-semibold text-[#1DB954]">Shape of You</p>
+          <p class="text-sm text-gray-300">Ed Sheeran</p>
+        </div>
+        <div class="text-sm text-gray-400">07/05/2025 - 18:42</div>
+      </div>
+
+      <div class="bg-[#2a2a2a] p-4 rounded-lg shadow flex items-center justify-between hover:scale-[1.01] transition">
+        <div>
+          <p class="text-lg font-semibold text-[#1DB954]">Blinding Lights</p>
+          <p class="text-sm text-gray-300">The Weeknd</p>
+        </div>
+        <div class="text-sm text-gray-400">06/05/2025 - 14:27</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

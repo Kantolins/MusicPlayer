@@ -40,7 +40,7 @@ Remarque : l'utilisation de connexion internet est requise
    ```bash
    python3.12 -m venv venv
    source venv/bin/activate  # ou venv\Scripts\activate sous Windows
-   pip install -r requirements.txt
+   pip install -r requirements.txt # cela installera les dépendances
    ```
 
 2. **Configurer la base de données MySQL**
